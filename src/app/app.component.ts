@@ -1,12 +1,16 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { TodoListComponent } from './components/todo-list/todo-list.component';
+import { PomodoroComponent } from './components/Pomodoro/pomodoro.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrls: ['./app.component.scss'],
+  imports: [CommonModule, TodoListComponent, PomodoroComponent]
 })
 export class AppComponent {
-  title = 'angulartodo, changed user generally';
+  showTodo = true;
+  showTimer = true;
 }

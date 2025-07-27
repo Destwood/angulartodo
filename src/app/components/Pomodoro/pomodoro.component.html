@@ -1,0 +1,12 @@
+<div class="pomodoro-container">
+  <h2 class="pomodoro-title">Pomodoro</h2>
+  <div class="buttons">
+    <button class="PomodoroButton" (click)="startTimer('pomodoro')">Focus</button>
+    <button class="PomodoroButton" (click)="startTimer('shortBreak')">Short Break</button>
+    <button class="PomodoroButton" (click)="startTimer('longBreak')">Long Break</button>
+  </div>
+  <div class="time-display">{{ formatTime(timeLeft) }}</div>
+  <button class="TimerButton {{ isPaused ? '' : 'Running' }}" (click)="togglePause()">
+    {{ isPaused ? 'Continue' : 'Pause' }}
+  </button>
+</div>

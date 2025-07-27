@@ -1,0 +1,65 @@
+.pomodoro-container {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  max-width: 400px;
+  margin-top: 24px;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.46);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.pomodoro-title {
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.time-display {
+  color: rgba(255, 255, 255, 0.57);
+  font-size: 56px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.buttons {
+  display: flex;
+  gap: 12px;
+  text-wrap: nowrap;
+  margin: 1rem 0;
+}
+
+.PomodoroButton {
+  font-size: 16px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 5px;
+  background-color: #1D1C1F;
+  box-shadow: 0 -1px 2px 0px #eaa25d;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.TimerButton {
+  width: 80px;
+  font-size: 12px;
+  padding: 4px 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #1D1C1F;
+  box-shadow: 0 -1px 2px 0px #eaa25d;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Running {
+  color: rgba(255, 255, 255, 0.32);
+}
+
+.buttons button:hover {
+  background-color: #353237;
+}
