@@ -89,7 +89,7 @@
               {
                 "glob": "**/*",
                 "input": "public",
-                "output": "/"
+                "output": "/media"
               }
             ],
             "styles": [
