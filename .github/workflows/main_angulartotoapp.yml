@@ -30,7 +30,7 @@ jobs:
 
       - name: Archive build output
         shell: pwsh
-        run: Compress-Archive -Path .\dist\* -DestinationPath release.zip
+        run: Compress-Archive -Path .\dist\angulartodo\browser\* -DestinationPath release.zip
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
