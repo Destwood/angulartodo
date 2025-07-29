@@ -29,7 +29,7 @@
               {
                 "glob": "**/*",
                 "input": "public",
-                "output": "/"
+                "output": "media"
               }
             ],
             "styles": [
@@ -89,7 +89,7 @@
               {
                 "glob": "**/*",
                 "input": "public",
-                "output": "/media"
+                "output": "media"
               }
             ],
             "styles": [
